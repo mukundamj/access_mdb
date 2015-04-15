@@ -21,7 +21,7 @@ five_min = datetime.timedelta(0,300)
 start =datetime.datetime(2015,03,28,00,00)
 a=start
 b=start+datetime.timedelta(0,240)
-wb = load_workbook('SE_Lysimeter_TDT_Sensors_Experiment-02_03_28_2015.xlsx')
+wb = load_workbook('..\SE_Lysimeter_TDT_Sensors_Experiment-02_03_28_2015.xlsx')
 ws = wb.active
   
 
@@ -137,7 +137,7 @@ while a < (start+datetime.timedelta(1)):
 #       print(u"Date_Time is {0} Address is {1} moisture is {2} temp is {3}".format(row.get('Date_Time'),row.get('Address'),row.get('Volumetric_Water_Content'), row.get('Soil_Temperature')))
     a = a+five_min
     b = b+five_min   
-wb.save('SE_Lysimeter_TDT_Sensors_Experiment-02_03_28_2015.xlsx')
+wb.save('..\SE_Lysimeter_TDT_Sensors_Experiment-02_03_28_2015.xlsx')
 
 
 #For SW Lysimeter
@@ -145,7 +145,7 @@ wb.save('SE_Lysimeter_TDT_Sensors_Experiment-02_03_28_2015.xlsx')
 start = datetime.datetime(2015,03,28,00,00)
 a=start
 b=start+datetime.timedelta(0,240)
-wb = load_workbook('SW_Lysimeter_TDT_Sensors_Experiment-02_03_28_2015_MT.xlsx')
+wb = load_workbook('..\SW_Lysimeter_TDT_Sensors_Experiment-02_03_28_2015_MT.xlsx')
 ws = wb.active
 
 r1=r2=r3=r4=r5=r6=r7=r8=r9=r10=r11=r12=r13=r14=r15=r16=7
@@ -261,7 +261,7 @@ while a < (start+datetime.timedelta(1)):
     a = a+five_min
     b = b+five_min
 
-wb.save('SW_Lysimeter_TDT_Sensors_Experiment-02_03_28_2015_MT.xlsx')
+wb.save('..\SW_Lysimeter_TDT_Sensors_Experiment-02_03_28_2015_MT.xlsx')
 cur.close()
 conn.close()
 
